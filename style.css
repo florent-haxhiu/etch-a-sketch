@@ -1,0 +1,35 @@
+:root {
+	--grid-rows: 1;
+	--grid-cols: 1;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+#flex-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.grid {
+	display: grid;
+	/* grid-gap: 0.5em; */
+	grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+	border: 1px solid #000;
+}
+
+.grid-item {
+	padding: 1em;
+  text-align: center;
+}
